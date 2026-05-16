@@ -1,0 +1,161 @@
+/* Importa os padrões de estilos */
+
+@import './styles/header.css';
+@import './styles/footer.css';
+
+:root {
+    --primary-color: #8C5A3C;
+    --secondary-color: #F5EBE0;
+    --accent-color: #201B1B;
+    --accent-secondary-color: white;
+    --text-color: black;
+    --page-font: 'Montserrat', sans-serif;
+}
+
+.modoescuro {
+    --primary-color: #48312E;
+    --secondary-color: #201B1B;
+    --accent-color: #F5EBE0;
+    --text-color: white;
+    --accent-secondary-color: #9b655d;
+    --third-color: #ffc484;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o conteúdo principal da página */
+
+body {
+    font-family: var(--page-font);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transition: 1s;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.sobre-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sobre-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    padding: 2rem;
+    margin-left: 2rem;
+}
+
+.sobre-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.sobre-description {
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.5;
+    
+    font-weight: 500;
+}
+
+.sobre-highlight {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 2rem;
+
+}
+
+.criadores-section {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.criadores-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+/* ====================================
+   RESPONSIVIDADE DA PÁGINA SOBRE
+   ==================================== */
+
+@media (max-width: 768px) {
+    .sobre-section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .sobre-text-container {
+        width: 100%;
+        padding: 1.5rem;
+        margin-left: 0;
+    }
+
+    .sobre-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .sobre-description {
+        font-size: 1rem;
+    }
+
+    .sobre-highlight {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .criadores-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .criadores-section {
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-text-container {
+        padding: 1rem;
+    }
+
+    .sobre-title {
+        font-size: 1.5rem;
+    }
+
+    .sobre-description {
+        font-size: 0.95rem;
+    }
+
+    .sobre-highlight {
+        font-size: 1.05rem;
+    }
+
+    .criadores-title {
+        font-size: 1.5rem;
+    }
+}

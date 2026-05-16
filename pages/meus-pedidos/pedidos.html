@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+    PÁGINA MEUS PEDIDOS
+    Página que exibe histórico de pedidos do usuário
+    Mostra status de entrega, rastreamento e detalhes de cada pedido
+-->
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="pedidos.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../componentes/dropdown-menu/dropdown-menu.css">
+    <!-- Scripts -->
+    <script type="text/javascript" src="../../componentes/dropdown-menu/dropdown-menu.js" defer></script>
+    <script type="text/javascript" src="../../componentes/mobile-menu/mobile-menu.js" defer></script>
+    <!-- Fonte e ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/logo zf.png" type="image/x-icon">
+    <title>Meus Pedidos | Zero Frame</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../../index.html" class="logo-link-header">
+            <img src="../../assets/logo zf.png" alt="Zero Frame Logo" class="logo">
+        </a>
+        <nav class="navigation-header" id="mainNav">
+            <ul class="nav-menus-ul links">
+                <li><a href="../../pages/search/search.html?q=Originais" class="itens-nav-menus" target="_blank">ORIGINAIS</a></li>
+                <li><a href="../../pages/search/search.html?q=Multimarcas" class="itens-nav-menus" target="_blank">MULTIMARCAS</a></li>
+                <li><a href="../../pages/sobre/sobre.html" class="itens-nav-menus" target="_blank">SOBRE NÓS</a></li>
+            </ul>
+
+            <form action="../../pages/search/search.html" method="GET" class="search-bar-container">
+                <input type="text" name="q" placeholder="O que você está procurando?" class="search-bar" id="searchInput">
+                <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </nav>
+
+        <div class="header-right-actions">
+            <ul class="user-actions-ul links">
+                <li class="user-actions-li"><a href="../../pages/carrinho/carrinho.html" class="user-actions-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="dropdown user-actions-li">
+                    <button class="user-dropdown-icon" id="userMenuIcon"><i class="fa-solid fa-user"></i></button>
+                    <ul class="dropdown-content" id="dropdownMenu">
+                        <li class="dropdown-header">
+                            <div class="dropdown-header-text">
+                                <h3>Username</h3>
+                                <p>email@email.com</p>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-gear"></i></a>
+                        </li>
+                        <hr class="hr-dropdown">
+                        <li><a href="./pedidos.html">Meus Pedidos</a></li>
+                        <li><a href="../favoritos/favoritos.html">Favoritos</a></li>
+                        <li><a href="../meus-enderecos/enderecos.html">Meus endereços</a></li>
+                        <hr class="hr-dropdown">
+                        <li><button class="theme-toggle-btn" id="toggle-button">Alternar tema</button></li>
+                        <li><a href="../../pages/suporte/suporte.html" target="_blank">Suporte</a></li>
+                        <hr class="hr-dropdown">
+                        <li><a href="../../pages/login-page/login.html">Sair da conta <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="account-hero section-container">
+            <div class="account-hero-card">
+                <h1>Meus Pedidos</h1>
+                <p>Confira o status, a entrega e os detalhes dos seus pedidos recentes.</p>
+            </div>
+        </section>
+
+        <section class="orders-section section-container">
+            <div class="section-header-container">
+                <div class="section-header">
+                    <h2 class="section-title">Pedidos recentes</h2>
+                </div>
+                <hr>
+            </div>
+
+            <div class="orders-list">
+                <article class="order-card">
+                    <div class="order-card-header">
+                        <div>
+                            <p class="small-label">Pedido #3214</p>
+                            <h3>Camisa Oversized Preta</h3>
+                        </div>
+                        <span class="order-status order-status-delivered">Entregue</span>
+                    </div>
+                    <div class="order-card-body">
+                        <p>Data: 24 de abril de 2026</p>
+                        <p>Valor total: R$ 90,00</p>
+                        <p>Forma de pagamento: Cartão de crédito</p>
+                    </div>
+                </article>
+
+                <article class="order-card">
+                    <div class="order-card-header">
+                        <div>
+                            <p class="small-label">Pedido #3198</p>
+                            <h3>Air Jordan 1 High Latte</h3>
+                        </div>
+                        <span class="order-status order-status-shipped">Em trânsito</span>
+                    </div>
+                    <div class="order-card-body">
+                        <p>Data: 18 de abril de 2026</p>
+                        <p>Valor total: R$ 1.299,99</p>
+                        <p>Estimativa: 30 de abril de 2026</p>
+                    </div>
+                </article>
+
+                <article class="order-card">
+                    <div class="order-card-header">
+                        <div>
+                            <p class="small-label">Pedido #3180</p>
+                            <h3>Calça Jeans Baggy Levi's</h3>
+                        </div>
+                        <span class="order-status order-status-processing">Processando</span>
+                    </div>
+                    <div class="order-card-body">
+                        <p>Data: 10 de abril de 2026</p>
+                        <p>Valor total: R$ 200,00</p>
+                        <p>Forma de pagamento: PIX</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="../../componentes/theme-toggle.js"></script>
+
+</body>
+
+</html>

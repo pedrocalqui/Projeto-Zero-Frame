@@ -1,0 +1,140 @@
+@import '../../styles/header.css';
+@import '../../styles/footer.css';
+
+main {
+    padding: 6rem 2rem 2rem 2rem;
+    min-height: 100vh;
+}
+
+/* estilo do card do titulo */
+
+.account-hero-card {
+    background-color: var(--accent-secondary-color);
+    color: var(--accent-color);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
+    max-width: 1100px;
+}
+
+.modoescuro .account-hero-card   {
+    background-color: var(--primary-color);
+}
+
+.account-hero-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.account-hero-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* estilo do card dos pedidos */
+
+.addresses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+.address-card {
+    background-color: var(--accent-secondary-color);
+    border-radius: 1.5rem;
+    padding: 1.75rem;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
+}
+
+.h-e-label {
+    display: flex;
+    gap: 0.8rem
+}
+
+.modoescuro .address-card   {
+    background-color: var(--primary-color);
+}
+
+.address-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.address-card-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.address-label {
+    background-color: #f6e7d7;
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1200px;
+    font-size: 0.85rem;
+}
+
+.edit-address {
+    margin-left: 0.5rem;
+    background-color: transparent;
+    color: #f6e7d7;
+    padding: 0.4rem;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.edit-address:hover {
+    background-color: #f6e7d7;
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    transition: 0.3s ease-in-out;
+} 
+
+.address-card p {
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 4rem 1rem 1rem 1rem;
+    }
+
+    .account-hero-card h1 {
+        font-size: 1.8rem;
+    }
+
+    .addresses-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 3.8rem 0.6rem 0.6rem 0.6rem;
+    }
+
+    .account-hero-card {
+        padding: 1.2rem;
+        border-radius: 1rem;
+    }
+
+    .account-hero-card h1 {
+        font-size: 1.4rem;
+    }
+
+    .address-card {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+}
