@@ -150,5 +150,104 @@
 .fa-linkedin:hover {
     transform: scale(1.2);
     color: var(--linkedin-color);
+}
 
+/* ====================================
+   RESPONSIVIDADE DO SLIDER
+   ==================================== */
+
+@media (max-width: 768px) {
+    /* Mantém botões nas laterais, reduz gap */
+    .slider-container {
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+        align-items: center;
+    }
+
+    /* Conteúdo ocupa o espaço restante entre os botões */
+    .slider-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .slider-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 16px;
+        flex-shrink: 0;
+    }
+
+    /* Card do fundador vira coluna */
+    .content-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        gap: 1.2rem;
+        align-items: center;
+    }
+
+    /* Foto centralizada com tamanho controlado */
+    .content-img {
+        height: auto;
+        width: 70%;
+        max-width: 260px;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+    }
+
+    .content-text-div {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content-title {
+        font-size: 1.6rem;
+    }
+
+    .content-subtitle {
+        font-size: 1rem;
+    }
+
+    .content-text-titles {
+        margin-bottom: 1rem;
+    }
+
+    .content-paragraph {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .fundadores-links-container {
+        margin-top: 1.5rem;
+        gap: 1.2rem;
+    }
+
+    .fundadores-i {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-img {
+        width: 80%;
+        max-width: 220px;
+    }
+
+    .content-title {
+        font-size: 1.3rem;
+    }
+
+    .content-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .content-paragraph {
+        font-size: 0.85rem;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
 }
