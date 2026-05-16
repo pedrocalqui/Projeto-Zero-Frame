@@ -421,10 +421,15 @@ main {
         opacity: 0.85;
     }
 
-    /* Grid de produtos sem sidebar */
+    /* Grid de produtos — sempre 2 colunas em mobile/tablet */
     .products-container {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+
+    /* Cards ocupam toda a coluna do grid */
+    .search-results .product-card {
+        width: 100%;
     }
 }
 
@@ -442,7 +447,7 @@ main {
     }
 
     .products-container {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 0.7rem;
     }
 }
