@@ -421,10 +421,10 @@ main {
         opacity: 0.85;
     }
 
-    /* Grid de produtos — sempre 2 colunas em mobile/tablet */
+    /* Grid de produtos — 3 colunas no tablet */
     .products-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
     }
 
     /* Cards ocupam toda a coluna do grid */

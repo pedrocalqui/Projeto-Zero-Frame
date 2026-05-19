@@ -200,30 +200,28 @@ main {
    RESPONSIVIDADE DA PÁGINA DE PRODUTO
    ==================================== */
 
+/* Tablet — layout horizontal mantido */
 @media (max-width: 768px) {
     main {
-        padding: 4rem 1rem 1rem 1rem;
+        padding: 4.5rem 1.5rem 1rem 1.5rem;
     }
 
     .main-product-section {
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
+        padding: 1.5rem;
+        gap: 1.5rem;
     }
 
     .main-product-image {
-        height: auto;
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
+        height: 42dvh;
+        width: auto;
     }
 
     .main-product-info-container {
-        max-width: 100%;
+        max-width: 50%;
     }
 
     .main-product-title {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .main-product-price {
@@ -231,7 +229,7 @@ main {
     }
 
     .main-add-to-cart-btn:hover {
-        width: 260px;
+        width: 280px;
     }
 }
 

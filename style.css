@@ -155,34 +155,34 @@ main {
 /* Tablet */
 @media (max-width: 768px) {
     .banner {
-        height: 35vh;
+        height: 42vh;
     }
 
     .section-container {
-        padding: 0 1rem;
-        margin-top: 1rem;
+        padding: 0 2rem;
+        margin-top: 1.2rem;
     }
 
     .section-title {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .ver-todos-link {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .section-header {
-        padding: 0.5rem;
+        padding: 0.8rem;
     }
 
     .products-container {
-        gap: 1rem;
+        gap: 1.5rem;
         justify-content: center;
         flex-wrap: wrap;
     }
 
     .section-header-container {
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
     }
 }
 
