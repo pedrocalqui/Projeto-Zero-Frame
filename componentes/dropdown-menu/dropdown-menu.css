@@ -101,16 +101,17 @@
 
 /* Header do dropdown (informações do usuário) */
 .dropdown-header {
-    color: var(--text-color);
+    color: #F5EBE0;
     display: flex;
     align-items: center;
     gap: 5rem;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 /* Link de configurações no header */
 .dropdown-header a {
     font-size: 1.5rem;
+    color: #F5EBE0;
 }
 
 /* Conteúdo do dropdown (menu quando aberto) */
@@ -120,18 +121,19 @@
     position: absolute;
     /* Posiciona abaixo do botão */
     top: 100%;
-    right: 0; 
-    border-radius: 0.5rem 0 0.5rem 0.5rem;
+    right: 0;
+    border-radius: 0 0 0.5rem 0.5rem;
     /* Sombra para profundidade */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     padding: 1rem;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    min-width: 220px;
 }
 
 /* Links dentro do dropdown */
 .dropdown-content a {
     text-decoration: none;
-    color: var(--text-color);
+    color: #F5EBE0;
 }
 
 /* Efeito hover nos links do dropdown */
@@ -141,7 +143,7 @@
 
 /* Separadores (linhas hr) dentro do dropdown */
 .hr-dropdown {
-    color: var(--text-color);
+    border-color: rgba(245, 235, 224, 0.25);
     margin: 0.5rem 0;
 }
 
@@ -166,7 +168,7 @@
 
 /* Botão para alternar tema */
 .theme-toggle-btn {
-    color: var(--text-color);
+    color: #F5EBE0;
     cursor: pointer;
     font-size: 1rem;
     font-family: var(--page-font);
