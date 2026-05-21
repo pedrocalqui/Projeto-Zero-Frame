@@ -107,7 +107,7 @@ footer {
    RESPONSIVIDADE DO FOOTER
    ==================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     footer {
         flex-direction: column;
         align-items: center;

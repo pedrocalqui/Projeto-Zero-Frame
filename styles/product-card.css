@@ -122,9 +122,9 @@
    RESPONSIVIDADE DOS CARDS
    ==================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .product-card {
-        width: clamp(170px, 22vw, 215px);
+        width: clamp(150px, 18vw, 220px);
         padding: 0.9rem;
     }
 

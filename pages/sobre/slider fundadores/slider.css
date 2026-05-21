@@ -157,7 +157,7 @@
    ==================================== */
 
 /* Tablet — layout horizontal mantido, proporções ajustadas */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .slider-container {
         gap: 0.8rem;
         padding: 0 0.5rem;

@@ -113,7 +113,7 @@ body {
    ==================================== */
 
 /* Tablet — layout horizontal mantido, tamanhos ajustados */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .main-content {
         padding-top: 4rem;
         padding-bottom: 2rem;
